@@ -17,13 +17,13 @@ console.log(`Opção 0 = Sair:`);
 
 opcao = Number(prompt("Digite a opção desejada:"));
 
-if (opcao == 1) {
+if (opcao === 1) {
 
     const item: string = prompt("Digite o item que deseja adicionar a lista:");
     lista.push(item);
     console.log(`Você adicionou ${item} em sua lista`);
 
-} else if (opcao == 2) {
+} else if (opcao === 2) {
     console.log(`Esses são os itens que você tem em sua lista até o momento: ${lista}`);
     const itemremover: string = prompt("Digite o item que deseja remover da lista:");
     const indice = lista.indexOf(itemremover);
@@ -35,10 +35,10 @@ if (opcao == 1) {
         console.log(`Item não encontrado na lista`);
     }
 
-} else if (opcao == 3) {
+} else if (opcao === 3) {
     console.log(`Esses são os itens presentes em sua lista atualmente: ${lista}`);
 
-} else if (opcao == 0) {
+} else if (opcao === 0) {
     console.log(`Você saiu do Mercado, até a próxima!`);
 
 } else {
